@@ -85,7 +85,7 @@ class btagSFProducer(Module):
                     'supported_wp': ["L", "M", "T", "shape_corr"]
                 },
                 '2017': {
-                    'inputFileName': "DeepCSV_94XSF_V4_B_F.csv",
+                    'inputFileName': "DeepCSV_94XSF_V5_B_F.csv",
                     'measurement_types': {
                         0: "comb",  # b
                         1: "comb",  # c
@@ -94,7 +94,7 @@ class btagSFProducer(Module):
                     'supported_wp': ["L", "M", "T", "shape_corr"]
                 },
                 '2018': {
-                    'inputFileName': "DeepCSV_102XSF_V1.csv",
+                    'inputFileName': "DeepCSV_102XSF_V2.csv",
                     'measurement_types': {
                         0: "comb",  # b
                         1: "comb",  # c
@@ -114,7 +114,7 @@ class btagSFProducer(Module):
                     'supported_wp': ["L", "M", "T", "shape_corr"]
                 },
                 '2017': {
-                    'inputFileName': "DeepFlavour_94XSF_V3_B_F.csv",
+                    'inputFileName': "DeepFlavour_94XSF_V4_B_F.csv",
                     'measurement_types': {
                         0: "comb",  # b
                         1: "comb",  # c
@@ -123,7 +123,7 @@ class btagSFProducer(Module):
                     'supported_wp': ["L", "M", "T", "shape_corr"]
                 },
                 '2018': {
-                    'inputFileName': "DeepJet_102XSF_V1.csv",
+                    'inputFileName': "DeepJet_102XSF_V2.csv",
                     'measurement_types': {
                         0: "comb",  # b
                         1: "comb",  # c
@@ -346,3 +346,4 @@ class btagSFProducer(Module):
 
 btagSF2016 = lambda: btagSFProducer("2016")
 btagSF2017 = lambda: btagSFProducer("2017")
+btagSF2018 = lambda: btagSFProducer("2018")

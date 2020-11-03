@@ -145,7 +145,7 @@ class fatJetUncertaintiesProducer(Module):
         if len(jesUncertainties) == 1 and jesUncertainties[0] == "Total":
             self.jesUncertaintyInputFileName = globalTag + "_Uncertainty_" + jetType + ".txt"
         elif jesUncertainties[0] == "Merged" and not self.isData:
-            self.jesUncertaintyInputFileName = "Regrouped_" + \
+            self.jesUncertaintyInputFileName = "RegroupedV2_" + \
                 globalTag + "_UncertaintySources_" + jetType + ".txt"
         else:
             self.jesUncertaintyInputFileName = globalTag + \
